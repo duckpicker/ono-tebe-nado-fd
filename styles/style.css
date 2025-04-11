@@ -4,14 +4,16 @@ header {
     grid-gap: 0;
     font-size: 18px;
     min-height: 293px;
-    margin: 53px -19px -53px 19px;
+    margin: 53px 0 -53px 0;
     justify-items: center;
     align-items: center;
-    padding-bottom: 4px;
+    max-width: 100%;
+    padding-left: 36px;
 }
 
 .header__logo {
     margin-left: 6px;
+    margin-bottom: 5px;
     width: 148px;
     height: 105px;
 }
@@ -31,7 +33,6 @@ a {
     list-style-type: circle;
     margin: 0 auto;
     padding-bottom: 4px;
-    padding-left: 14px;
 }
 
 .menu-item:first-child {
@@ -42,16 +43,15 @@ a {
     }
 }
 
-.cover__overlay {
-    background-color: black;
-}
-
 .header__contacts {
     max-width: 240px;
     margin-left: 130px;
+    padding-left: 12px;
+    margin-bottom: 5px;
 }
 
 .contacts {
+    font-style: normal;
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +65,7 @@ a {
     position: relative;
     min-height: 757px;
     background-image: url("/images/lotus-flower.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
@@ -234,7 +234,7 @@ a {
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 24px;
+    padding: 2px 24px;
 }
 
 .about__logo {
@@ -254,7 +254,7 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 40px;
-    margin: 0 auto;
+    margin: 1px auto;
     padding-top: 2px;
 }
 
@@ -279,6 +279,7 @@ footer {
     grid-gap: 0;
     padding: 0 50px;
     font-size: 18px;
+    line-height: 115%;
 }
 
 .footer__contacts {
