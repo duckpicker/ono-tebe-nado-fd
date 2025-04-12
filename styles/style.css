@@ -3,15 +3,14 @@ header {
     grid-template-columns: 1fr min-content 1fr;
     grid-gap: 0;
     font-size: 18px;
-    padding: 141px 0 38px 36px;
+    padding: 91px 0 92px 0;
     justify-items: center;
     align-items: center;
     max-width: 100%;
+    margin-left: 4px;
 }
 
 .header__logo {
-    margin-left: 6px;
-    margin-top: 5px;
     width: 148px;
     height: 105px;
 }
@@ -22,7 +21,7 @@ a {
 }
 
 .menu-list {
-    padding: 0;
+    padding: 0 0 0 4px;
 }
 
 .header__menu-list {
@@ -44,7 +43,6 @@ a {
 .header__contacts {
     max-width: 240px;
     margin-left: 130px;
-    padding-left: 12px;
     margin-bottom: 3px;
 }
 
@@ -66,7 +64,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow: hidden;
     color: white;
 }
 
@@ -86,7 +83,7 @@ a {
 }
 
 .cover__title {
-    margin: 165px 50px 106px 50px;
+    padding: 146px 50px 85px 50px;
 }
 
 .cover__title-element span {
@@ -278,6 +275,7 @@ footer {
 
 .footer__contacts {
     max-width: 265px;
+    padding-bottom: 82px;
 }
 
 .footer__menu-list {
