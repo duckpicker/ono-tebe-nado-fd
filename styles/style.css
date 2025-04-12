@@ -3,17 +3,15 @@ header {
     grid-template-columns: 1fr min-content 1fr;
     grid-gap: 0;
     font-size: 18px;
-    min-height: 293px;
-    margin: 53px 0 -53px 0;
+    padding: 94px 0 38px 36px;
     justify-items: center;
     align-items: center;
     max-width: 100%;
-    padding-left: 36px;
 }
 
 .header__logo {
     margin-left: 6px;
-    margin-bottom: 5px;
+    margin-top: 5px;
     width: 148px;
     height: 105px;
 }
@@ -35,7 +33,7 @@ a {
     padding-bottom: 4px;
 }
 
-.menu-item:first-child {
+.menu-active-item {
     list-style-type: none;
     margin: auto;
     a {
@@ -47,7 +45,7 @@ a {
     max-width: 240px;
     margin-left: 130px;
     padding-left: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .contacts {
@@ -64,7 +62,7 @@ a {
 .cover {
     position: relative;
     min-height: 757px;
-    background-image: url("/images/lotus-flower.png");
+    background-image: url("../images/lotus-flower.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,31 +89,29 @@ a {
     margin: 165px 50px 106px 50px;
 }
 
-.cover__title-element {
+.cover__title-element span {
     font-weight: bold;
     letter-spacing: 30px;
     font-size: 100px;
     text-transform: uppercase;
     line-height: 115%;
     margin: 20px 0;
+    display: flex;
 }
 
-.cover__title-element:nth-child(1) {
-    display: flex;
+.cover__title span:nth-child(1) {
     align-content: flex-start;
     justify-content: flex-start;
 }
 
-.cover__title-element:nth-child(2) {
-    display: flex;
+.cover__title span:nth-child(2) {
     align-content: center;
     justify-content: center;
     text-align: center;
     margin-left: 30px;
 }
 
-.cover__title-element:nth-child(3) {
-    display: flex;
+.cover__title span:nth-child(3) {
     align-content: flex-end;
     justify-content: flex-end;
     margin-right: -30px;
@@ -138,24 +134,19 @@ a {
 }
 
 .cover__description-subline {
-    margin: 0 auto;
-}
-
-.cover__custom_button {
-    position: relative;
+    margin: 0;
 }
 
 .cover__custom-bet-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-decoration: none;
+    border: solid 1px white;
 }
 
 .cover__custom-bet-button-text {
-    position: absolute;
     color: white;
     font-weight: 500;
-    margin: 0 auto 5px auto;
+    margin: 12px 32px;
 }
 
 .lots {
@@ -176,37 +167,41 @@ a {
     gap: 25px;
     padding: 0;
     margin: 27px 0 30px 0;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+    }
 }
 
 .lots__item {
+    position: relative;
     background-repeat: no-repeat;
     background-size: 334px 596px;
 }
 
-.lots__item:nth-child(1) {
-    background-image: url("/images/first-lot.png");
+.lots__item.first-item {
+    background-image: url("../images/first-lot.png");
 }
 
-.lots__item:nth-child(2) {
-    background-image: url("/images/second-lot.jpg");
+.lots__item.second-item {
+    background-image: url("../images/second-lot.jpg");
 }
 
-.lots__item:nth-child(3) {
-    background-image: url("/images/third-lot.png");
+.lots__item.third-item {
+    background-image: url("../images/third-lot.png");
 }
 
 .lots__lot-wrapper {
-    position: relative;
-    min-height: 596px;
     max-width: 334px;
+    min-height: 596px;
     color: white;
     display: flex;
     flex-direction: column;
 }
 
 .lots__lot-content {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -273,7 +268,6 @@ a {
 
 footer {
     margin-top: 155px;
-    min-height: 180px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0;
@@ -301,10 +295,11 @@ footer {
     justify-self: flex-end;
     a {
         text-decoration: none;
-        img {
-            margin-left: 43px;
-            width: 48px;
-            height: 48px;
-        }
     }
+}
+
+.footer__socials-item {
+    margin-left: 43px;
+    width: 48px;
+    height: 48px;
 }
