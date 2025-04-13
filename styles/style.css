@@ -176,15 +176,15 @@ a {
     background-size: 334px 596px;
 }
 
-.lots__item.first-item {
+.card_type_film {
     background-image: url("../images/first-lot.png");
 }
 
-.lots__item.second-item {
+.card_type_book {
     background-image: url("../images/second-lot.jpg");
 }
 
-.lots__item.third-item {
+.card_type_picture {
     background-image: url("../images/third-lot.png");
 }
 
